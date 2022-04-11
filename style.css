@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ddd;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+span {
+  color: #002adf;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.iconsContainer .icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem 3rem;
+}
+
+.iconsContainer .icons .bi {
+  cursor: pointer;
+  font-size: 40px;
+  padding: 1.5rem 2rem;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #002adf, #ffcc99);
+  background-size: 200%;
+  transition: background 0.3s ease-in-out;
+}
+
+.iconsContainer .icons .bi:hover {
+  background-position: right;
+}
